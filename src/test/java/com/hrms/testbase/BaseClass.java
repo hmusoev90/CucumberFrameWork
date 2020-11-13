@@ -31,7 +31,7 @@ public class BaseClass {
 			ChromeOptions chromeOptions = new ChromeOptions();
 			if (headless.equalsIgnoreCase("true")) {
 				chromeOptions.setHeadless(true);
-				driver = new ChromeDriver();
+				driver = new ChromeDriver(chromeOptions);
 			}
 			break;
 		case "firefox":
